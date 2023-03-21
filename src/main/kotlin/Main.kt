@@ -1,7 +1,16 @@
-fun main(args: Array<String>) {
-    println("Hello World!")
+fun main() {
 
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    println("Program arguments: ${args.joinToString()}")
+    val firstHumanInSpaceYear = 1961
+    var hourOfStart: String = "09"
+    var minuteOfStart: String = "07"
+
+    println(firstHumanInSpaceYear)
+    println(hourOfStart)
+    println(minuteOfStart)
+
+    hourOfStart = "10"
+    minuteOfStart = "55"
+
+    println(hourOfStart+":"+minuteOfStart)
+
 }
