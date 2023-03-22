@@ -1,17 +1,17 @@
 fun main() {
 
-    val firstHumanInSpaceYear = 1961
-    var hourOfStart: String = "09"
-    var minuteOfStart: String = "07"
+    val year = 1961
+    var hour: String = "09"
+    var minute: String = "07"
 
-    println(firstHumanInSpaceYear)
-    println(hourOfStart)
-    println(minuteOfStart)
+    println(year)
+    println(hour)
+    println(minute)
 
-    hourOfStart = "10"
-    minuteOfStart = "55"
+    hour = "10"
+    minute = "55"
 
-    println(hourOfStart+":"+minuteOfStart)
+    println(hour+":"+minute)
 
 
 }
