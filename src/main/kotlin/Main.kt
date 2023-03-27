@@ -1,7 +1,14 @@
-fun main(args: Array<String>) {
-    println("Hello World!")
+fun main() {
+    val seconds: Short = 6480
+    val secondsInMinute: Byte = 60
+    var minute: Short
+    var second: Byte
 
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    println("Program arguments: ${args.joinToString()}")
+
+    minute = (seconds/secondsInMinute).toShort()
+    second = (seconds - minute*secondsInMinute).toByte()
+
+
+    println("\n\n$minute" +":" + second.toString().padStart(2, '0'))
+
 }
