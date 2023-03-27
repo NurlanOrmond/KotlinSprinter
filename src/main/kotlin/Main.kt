@@ -1,7 +1,15 @@
-fun main(args: Array<String>) {
-    println("Hello World!")
+fun main() {
+    val length: Long = 40_868_600_000
+    val age: Byte = 27
+    val partOfDay: Float = 0.075f
+    val seconds: Short = 6480
+    val partOfYear: Double = 2.0547945205479453E-4
+    val apogee: Int = 327000
 
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    println("Program arguments: ${args.joinToString()}")
+    println(length)
+    println(age)
+    println(partOfDay)
+    println(seconds)
+    println(partOfYear)
+    println(apogee)
 }
