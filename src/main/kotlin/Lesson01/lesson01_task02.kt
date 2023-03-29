@@ -1,15 +1,22 @@
-package Lesson01
+import kotlin.math.roundToInt
+
+//Задача 4 к Уроку 2
+//В мобильной стратегии есть бафф (временное усиление какого-либо юнита или процесса),
+// который дает +20% к добытым материалам. Было добыто 7 кристаллической и 11 железной
+// руды без баффа – заранее известные данные, объявить и проинициализировать.
+//Напиши программу, которая будет учитывать действие баффа и выводить в консоль
+// количество “бонусных” (то есть тех материалов, которые даются “сверху” баффом).
+// По одной строке на материал с его названием.
+//Если получается нецелое число, то дробная часть должна отбрасывается.
 
 fun main () {
-    var quantityOfOrders: Int = 75
-    val positiveFeedBack001: String = "I appreciate your high level service and wish you prosperity!"
+    val cristal = 7
+    val ferrum = 11
+    val buffRatio = 0.2
 
-    println(quantityOfOrders)
-    println(positiveFeedBack001)
+    val cristalBuffRatio = cristal * buffRatio
+    val ferrumBuffRatio = ferrum * buffRatio
 
-    var employeeQuantity: Int = 2000
-    //println(employeeQuantity)
-
-    employeeQuantity = 1999
-    println(employeeQuantity)
+    println("Buff of cristal - ${cristalBuffRatio.roundToInt()}")
+    println("Buff of ferrum - ${ferrumBuffRatio.roundToInt()}")
 }
