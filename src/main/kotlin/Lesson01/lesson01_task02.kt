@@ -1,15 +1,20 @@
-package Lesson01
-
 fun main () {
-    var quantityOfOrders: Int = 75
-    val positiveFeedBack001: String = "I appreciate your high level service and wish you prosperity!"
+//    Сайт с расписанием поездов получает данные с сервера. Сервер посылает время выезда и время в пути,
+//    а время прибытия вычисляется из них. Сервер прислал данные, что поезд выехал в 9:39 и будет в пути 457 минут.
+//    – Создай целочисленные переменные и проинициализируй их этими данными;
+//    – Напиши программу, которая обработает данные и подсчитает час и минуту прибытия поезда;
+//    – Выведи результат в консоль.
 
-    println(quantityOfOrders)
-    println(positiveFeedBack001)
+    val hour = 9
+    val minute = 39
+    val minutesInHour = 60
+    val timeOnTrip = 457
+    val convertToMinutes = hour * minutesInHour + minute
+    val arrivingInMinutes = convertToMinutes + timeOnTrip
+    val arrivingHour = arrivingInMinutes/minutesInHour
+    val arrivingMinute = arrivingInMinutes - arrivingHour*minutesInHour
 
-    var employeeQuantity: Int = 2000
-    //println(employeeQuantity)
+    print("\n\nArriving time at $arrivingHour:$arrivingMinute\n\n")
 
-    employeeQuantity = 1999
-    println(employeeQuantity)
 }
+
