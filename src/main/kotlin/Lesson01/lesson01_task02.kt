@@ -1,15 +1,14 @@
-package Lesson01
-
 fun main () {
-    var quantityOfOrders: Int = 75
-    val positiveFeedBack001: String = "I appreciate your high level service and wish you prosperity!"
+    val oldEmployee = 50
+    val oldEmployeeSalary = 30_000
+    val newEmployee = 30
+    val newEmployeeSalary = 20_000
 
-    println(quantityOfOrders)
-    println(positiveFeedBack001)
+    val totalOldSalary = oldEmployee * oldEmployeeSalary
+    val tolalSalary = oldEmployee * oldEmployeeSalary + newEmployee * newEmployeeSalary
+    val meanSalary = tolalSalary / (oldEmployee + newEmployee)
 
-    var employeeQuantity: Int = 2000
-    //println(employeeQuantity)
-
-    employeeQuantity = 1999
-    println(employeeQuantity)
+    println("\n\nTotal salary of old employees -" + totalOldSalary)
+    println("Total salaty after coming new employees - " + tolalSalary)
+    println("Mean salary now - "+meanSalary)
 }
