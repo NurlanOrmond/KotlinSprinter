@@ -1,15 +1,26 @@
-package Lesson01
+import kotlin.math.floor
+import kotlin.math.pow
+
+//Задача 5* к Уроку 2
+//Напиши программу-калькулятор для банковского приложения
+// (такой функционал бывает на промо экранах).
+// Используя формулу сложных процентов (ее можно загуглить),
+// нужно посчитать размер вклада через 20 лет с такими условиями:
+//– Клиент ввел в приложении сумму 70_000 рублей (считать ее известной
+// заранее и проинициализировать переменную);
+//– Процентная ставка 16,7% (проценты начисляются в конце года);
+//– Подсчитать размер вклада через 20 лет;
+//– Результат должен быть дробным числом с 3 знаками после запятой;
+//– Ответ должен получиться таким 1536438.428.
+// S = S0 × (1 + P / 100)^n
 
 fun main () {
-    var quantityOfOrders: Int = 75
-    val positiveFeedBack001: String = "I appreciate your high level service and wish you prosperity!"
 
-    println(quantityOfOrders)
-    println(positiveFeedBack001)
+    val investment = 70_000
+    var rate = 16.7
+    var period = 20
 
-    var employeeQuantity: Int = 2000
-    //println(employeeQuantity)
+    val returnInvestment = floor(investment * (1+rate/100).pow(period) * 1000.0) / 1000.0
+    println(returnInvestment)
 
-    employeeQuantity = 1999
-    println(employeeQuantity)
 }
