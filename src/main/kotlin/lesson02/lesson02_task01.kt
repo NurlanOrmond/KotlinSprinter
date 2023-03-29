@@ -11,4 +11,5 @@ fun main () {
     var arithmeticMean = ((markOfFirstPuple+markOfSecondPuple+markOfThirdPuple+markOfForthPuple)/quantityOfPuples).toDouble()
 
     println(arithmeticMean)
+
 }
